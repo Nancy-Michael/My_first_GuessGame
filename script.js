@@ -13,6 +13,7 @@ resetButton.addEventListener('click', function () {
 })
 //when check button has preseed
 let score = 20;
+let highscore = 0;
 function gusseNumber() {
     let guess = Number(document.querySelector('.guess').value);
 
@@ -29,7 +30,10 @@ function gusseNumber() {
         gusseing.textContent = secretNumber;
         document.querySelector('.highscore').textContent = score;
         document.querySelector('h1').textContent = 'Good Guess!';
-
+         if (score > highscore) {
+            highscore = score;
+            document.querySelector('.highscore').textContent = highscore;
+        }
     }
     //when the guess is high
     else if (guess > secretNumber) {
