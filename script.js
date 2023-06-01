@@ -20,8 +20,6 @@ function gusseNumber() {
     //when There is no number
     if (!guess) {
         message.textContent = '⛔ No Number!';
-
-
     }
     //when plyer wins
     else if (guess === secretNumber) {
