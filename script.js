@@ -63,7 +63,6 @@ function resetGame() {
     score = 20;
     secretNumber = Math.floor(Math.random() * 20) + 1;
     document.querySelector('.score').textContent = score;
-    document.querySelector('.highscore').textContent = '0';
     document.querySelector('.guess').value = '';
 
     message.textContent = 'Start guessing....';
